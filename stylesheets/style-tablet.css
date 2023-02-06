@@ -1,0 +1,170 @@
+/* --------------------------------------
+  Tablet Styling
+-------------------------------------- */
+
+@media screen and (min-width: 48em) {
+
+  h1, h2 {
+    font-size: 2.25rem;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  h2 > i {
+    margin-right: 20px;
+  }
+
+  /* --------------------------------------
+    Reusable Classes
+  -------------------------------------- */
+
+  .container {
+    padding: 0 40px;
+  }
+
+  /* --------------------------------------
+    Header
+  -------------------------------------- */
+
+  .header {
+    padding: 20px 40px;
+  }
+
+  .header-logo-img {
+    width: 120px;
+  }
+
+  .header-nav-menu-item {
+    margin-left: 40px;
+  }
+
+  .header-nav-menu-item > a {
+    font-size: 1.5rem;
+  }
+
+  /* --------------------------------------
+    Main - Hero
+  -------------------------------------- */
+
+  .main-hero {
+    padding: 140px 0 100px;
+  }
+
+  .main-hero-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-hero-highlight {
+    width: 60%;
+  }
+
+  .main-hero-img {
+    display: block;
+    width: 40%;
+    padding-left: 20px;
+  }
+
+  .main-hero-img img {
+    border-radius: 50%;
+  }
+
+  /* --------------------------------------
+    Main - Works
+  -------------------------------------- */
+
+  .main-research {
+    padding: 100px 0;
+  }
+
+  .main-research-item {
+    display: flex;
+    align-items: center;
+    margin: 0 -30px 50px;
+  }
+
+  .main-research-item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .main-research-item-text,
+  .main-research-item-img {
+    width: 50%;
+    padding: 0 30px;
+  }
+
+  /* --------------------------------------
+    Main - About
+  -------------------------------------- */
+
+  .main-publication {
+    padding: 100px 0;
+  }
+
+  .main-publication-img .mobile {
+    display: none;
+  }
+
+  .main-publication-img .tablet-and-up {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .main-publication-container {
+    display: flex;
+  }
+
+  .main-publication-description,
+  .main-publication-addition {
+    width: 50%;
+  }
+
+  .main-publication-description {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+  /* --------------------------------------
+    Footer
+  -------------------------------------- */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .footer-info {
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .footer-info-follow {
+    margin-bottom: 140px;
+  }
+
+  .footer-info-copy {
+    margin-bottom: 0;
+    justify-items: center;
+  }
+
+  /* --------------------------------------
+    Page - Work
+  -------------------------------------- */
+
+  .main-article {
+    padding: 100px 0;
+  }
+}
