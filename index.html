@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Profile Page</title>
+    <title>個人ページ</title>
 
     <!-- Normalize.css -->
     <link rel="stylesheet" href="stylesheets/normalize.css">
@@ -23,19 +23,20 @@
     <link rel="stylesheet" href="stylesheets/style-laptop.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/jpg" href="images/tate.jpg">
+    <link rel="icon" type="image/jpg" href="images/lab-logo.png">
 </head>
 <body>
     <header class="header">
         <div class="header-logo">
             <img class="header-logo-img" src="images/yoko.png" alt="logo">
-            <span class="header-logo-title">個人ページ</span>
+            <span class="header-logo-title">Ikkyu Nishimura</span>
         </div>
         <nav class="header-nav">
             <ul class="header-nav-menu">
                 <li class="header-nav-menu-item"><a href="#home">Home</a></li>
                 <li class="header-nav-menu-item"><a href="#research">Research</a></li>
                 <li class="header-nav-menu-item"><a href="#publication">Publication</a></li>
+                <li class="header-nav-menu-item"><a href="#skill">Skill</a></li>
             </ul>
         </nav>
     </header>
@@ -43,8 +44,8 @@
         <section class="main-hero">
             <div class="main-hero-container container">
                 <div class="main-hero-highlight">
-                    <h1 class="belong">Ritsumeikan University<br>Social Interigence Lab</strong></h1>
-                    <h1 class="name"><strong>Ikkyu Nishimura</strong></h1>
+                    <h1 class="belong">立命館大学 <br>情報理工学研究科 D2<br>社会知能研究室</strong></h1>
+                    <h1 class="name"><strong>西村 一球</strong></h1>
                 </div>
                 <figure class="main-hero-img">
                     <img src="images/nishimura.jpg" alt="profile">
@@ -60,7 +61,7 @@
                     </figure>
                     <div class="main-research-item-text">
                         <h3>背景</h3>
-                        <p>近年、深層学習の発展により、機械翻訳の翻訳精度がTOEIC900点レベルの話者と同程度まで向上し、多言語コミュニケーションの支援環境が構築されつつある。しかしながら、文化や言語の違いによって、話者間で会話に齟齬が生まれることがある。例えば、“団子”とその英訳の“dumpling”がある。dumplingは団子よりも広義な概念を表し、日本で言う饅頭や小籠包もdumplingに含まれる。一方で、概念範囲が同じでも想起されるイメージが異なる場合がある。“ゴボウ”と“burdock”は正しい対訳関係にあるが、その植物の根を食べる文化を持つ日本人は根菜のイメージを想起する。このような二言語間で単語の表す概念の違いや単語から想起されるイメージの違いを、本研究では概念の非対称性、イメージの非対称性と呼び、このような非対称性を含んだコミュニケーションを非対称コミュニケーションと定義する。</p>
+                        <p>近年、機械翻訳の翻訳精度がTOEIC900点レベルの話者と同程度まで向上し、多言語コミュニケーションの支援環境が構築されつつある。しかしながら、文化や言語の違いによって、話者間で会話に齟齬が生まれることがある。例えば、“団子”とその英訳の“dumpling”がある。dumplingは団子よりも広義な概念を表し、日本で言う饅頭や小籠包もdumplingに含まれる。一方で、概念範囲が同じでも想起されるイメージが異なる場合がある。“ゴボウ”と“burdock”は正しい対訳関係にあるが、その植物の根を食べる文化を持つ日本人は根菜のイメージを想起する。このような二言語間で単語の表す概念の違いや単語から想起されるイメージの違いを、本研究では概念の非対称性、イメージの非対称性と呼び、このような非対称性を含んだコミュニケーションを非対称コミュニケーションと定義する。</p>
                     </div>
                 </div>
                 <div class="main-research-item">
@@ -68,25 +69,53 @@
                         <img src="images/cultural.png" alt="Work B">
                     </figure>
                     <div class="main-research-item-text">
-                        <h3>非対称コミュニケーションの支援</h3>
-                        <p>このような, 多言語における非対称コミュニケーションの問題を解決するために, 私は言語とイメージの両方から非対称性の検出手法を提案している. 具体的には, 言語レベルでは概念辞書の階層構造を用いて単語が表す概念粒度の差を検出する. 一方, イメージレベルではWeb上の画像の類似性に基づいて想起イメージの差を検出し, これらを用いて非対称コミュニケーションにおける問題を解決する.</p>
+                        <h3>イメージベースによる提案手法</h3>
+                        <p>画像に基づく文化差検出手法をしている。日英それぞれの単語から画像検索により取得される10枚ずつの画像から、ニューラルネットワークを用いて画像の特徴ベクトルを抽出する。各言語ごとに10枚分の画像ベクトルを平均し、平均特徴ベクトル間の類似度に基づき文化差を検出する。</p>
+                    </div>
+                </div>
+                <div class="main-research-item">
+                    <figure class="main-research-item-img tertiary">
+                        <img src="images/cultural.png" alt="Work B">
+                    </figure>
+                    <div class="main-research-item-text">
+                        <h3>単語ベースによる文化差検出手法</h3>
+                        <p>単語に基づく文化差検出手法を提案している。概念辞書に紐づけられる単語をもとに各単語の紐づく概念の違いから文化差を検出する。</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="publication" class="main-publication">
-            <div class="main-publication-container container">
+            <h2><i class="fa-sharp fa-solid fa-book"></i>Publication</h2>
+            <div class="main-publication-container container2">
                 <div class="main-publication-description">
-                    <h3 class="conference">学会論文</h3>
-                    <ol>
+                    <h3 class="conference">国際会議</h3>
+                    <ol class="paper">
                         <li>Ikkyu Nishimura, Yohei Murakami, Mondheera Pituxcoosuvarn, Evaluation Dataset for Cultural Difference Detection Task, in Proc. of the HCI International 2022 (HCII 2022), pp. 357–369, 2022.</li>
                         <li>Ikkyu Nishimura, Yohei Murakami, Mondheera Pituxcoosuvarn. Image-Based Detection Criteria for Cultural Differences in Translation, in Proc. of the 26th International Conference on Collaboration Technologies and Social Computing (CollabTech 2020), pp. 81-95, 2020.</li>
+                    </ol>
+                    <h3 class="conference">国内会議</h3>
+                    <ol class="paper">
                         <li>西村一球, 村上陽平, Mondheera Pituxcoosuvarn. 異常値検出を用いた単語の想起イメージの文化差検出, 情報処理学会, 第85全国大会, 2022.</li>
                     </ol>
                     <h3 class="article">論文誌</h3>
-                    <ol>
+                    <ol class="paper">
                         <li>西村一球, 村上陽平, Mondheera Pituxcoosuvarn. 画像特徴量に基づく文化差検出, ヒューマンインタフェース学会論文誌, vol. 23, no. 2, pp. 145-152, 2021.</li>
                     </ol>
+                </div>
+            </div>
+        </section>
+        <section id="skill" class="main-skill">
+            <h2><i class="fa-sharp fa-solid fa-list"></i>Skill</h2>
+            <div class="main-skill-container container">
+                <div class="main-skill-description">
+                    <ul class="skill-lists">
+                        <li class="skill-list">Python</li>
+                        <li class="skill-list">Java</li>
+                        <li class="skill-list">C言語</li>
+                        <li class="skill-list">HTML</li>
+                        <li class="skill-list">JavaScript</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -101,6 +130,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#research">Research</a></li>
                         <li><a href="#publication">Publication</a></li>
+                        <li><a href="#skill">Skill</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -52,7 +52,7 @@
   -------------------------------------- */
 
   .main-research {
-    padding: 120px 0;
+    padding: 10px 0;
   }
 
   .main-research-item {
@@ -61,23 +61,29 @@
 
   .main-research-item-text,
   .main-research-item-img {
-    padding: 0 60px;
+    padding: 20px 80px;
   }
 
   .main-research-item-img.primary img {
     box-shadow:
       1px 1px 10px rgba(0, 0, 0, 15%),
-      30px 30px 0 #53687E;
+      30px 30px 0 #47596d;
   }
 
   .main-research-item-img.secondary img {
     box-shadow:
       1px 1px 10px rgba(0, 0, 0, 15%),
-      30px 30px 0 #6B4E71;
+      30px 30px 0 #684f6c;
+  }
+
+  .main-research-item-img.tertiary img {
+    box-shadow:
+      1px 1px 10px rgba(0, 0, 0, 15%),
+      30px 30px 0 #56765b;
   }
 
   /* --------------------------------------
-    Main - About
+    Main - Publication
   -------------------------------------- */
 
   .main-publication {
@@ -98,6 +104,30 @@
 
   .main-publication-addition-skills ul + ul {
     margin-left: 30px;
+  }
+
+  /* --------------------------------------
+    Main - Skill
+  -------------------------------------- */
+
+  .main-skill {
+    padding: 120px 0;
+  }
+
+  .main-skill-description {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .main-skill-addition-skills skill-list {
+    color: #404040;
+    border-left: solid 6px #1fa67a;/*左側の線*/
+    border-bottom: solid 2px #dadada;/*下に灰色線*/
+    background: whitesmoke;
+    margin-bottom: 5px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
   }
 
   /* --------------------------------------

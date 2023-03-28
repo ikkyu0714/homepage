@@ -124,6 +124,38 @@ h3 {
 }
 
 /* --------------------------------------
+    Main - Skill
+  -------------------------------------- */
+
+  .main-skill {
+    padding: 100px 0;
+  }
+
+  .main-skill-img .mobile {
+    display: none;
+  }
+
+  .main-skill-img .tablet-and-up {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .main-skill-container {
+    display: flex;
+  }
+
+  .main-skill-description,
+  .main-skill-addition {
+    width: 50%;
+  }
+
+  .main-skill-description {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+
+/* --------------------------------------
   Footer
 -------------------------------------- */
 
