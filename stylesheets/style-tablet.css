@@ -123,7 +123,7 @@
 
   .main-publication-description,
   .main-publication-addition {
-    width: 50%;
+    width: 100%;
   }
 
   .main-publication-description {
@@ -155,7 +155,7 @@
 
   .main-skill-description,
   .main-skill-addition {
-    width: 50%;
+    width: 100%;
   }
 
   .main-skill-description {

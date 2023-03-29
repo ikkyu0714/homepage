@@ -76,8 +76,9 @@ input[type="submit"]:hover {
 }
 
 .container2 {
-  max-width: 2560px;
-  margin: 80px;
+  max-width: 2000px;
+  margin: 30px 30px 30px 30px;
+  width: auto;
 }
 
 .button {
@@ -222,14 +223,14 @@ input[type="submit"]:hover {
 
 .main-publication {
   background-color: #FFF;
+  width: 100%;
 }
 
 ol.paper {
   padding: 0;
   font: 25px/1.6 'arial narrow', sans-serif;
-  width:500px;
+  width: 100%;
   list-style: none;
-  padding-right: 0;
 }
 
 ol.paper li {
@@ -265,15 +266,21 @@ ol.paper li {
 
 .main-skill {
   background-color: #FFF;
+  width: 100%;
 }
 
-div.main-skill-container.container {
+div.main-skill-container {
+  width: 100%;
+}
+
+div.main-skill-container.container2 {
   align-items: center;
+  width: 100%;
 }
 
 ul.skill-lists {
   font: 20px/1.6 'arial narrow', sans-serif;
-  padding: 10px 10px 10px 10px;
+  padding: 30px 30px 30px 30px;
   color: #448ccb;
   background: #ecf3fa;
   border: solid 5px #adcce8;
@@ -286,7 +293,8 @@ ul.skill-lists li {
   display: inline-block;
   position: relative;
   line-height: 30px;
-  padding-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-weight: bold;
   border-bottom: dashed 1px #448ccb;
 }
@@ -366,7 +374,7 @@ ul.skill-lists li:before{
 }
 
 .main-article-container {
-  max-width: 750px;
+  max-width: 1000px;
 }
 
 .main-article-topic {
